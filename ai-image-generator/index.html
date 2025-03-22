@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Vite App</title>
+  </head>
+  <body class="flex min-h-screen items-center justify-center bg-zinc-900">
+    <div id="app">
+      <div class="w-[700px] p-6 bg-white rounded-xl shadow-md border-t-8 border-t-sky-700">
+       
+        <header class="flex justify-between">
+          <div class="flex gap-8 items-center ">
+
+            <div class="w-12 h-12 bg-sky-700 p-2 rounded-lg">
+              <img src="magic-wand-svgrepo-com.svg" alt="magic" class="w-full h-full text-white"/>
+            </div>
+            <h1 class="text-2xl font-bold text-gray-800 mb-2">AI Image Generator</h1>
+
+          </div>
+          <div class="w-8 h-8 bg-sky-600/100 p-2 rounded-full mt-1">
+            <img src="dark-mode-night-moon-svgrepo-com.svg" alt=""  class="w-full h-full text-white"/>
+          </div>
+        </header>
+        <main>
+          <div class="my-9">
+            <textarea placeholder="Type your prompt here..."
+              class="w-full h-36 rounded-xl bg-sky-100 p-4 focus:outline-2 focus:outline-offset-2 focus:outline-sky-500 resize-none"></textarea>
+          </div>
+          <div class="flex gap-16 flex-row-reverse">
+            <button class="px-3 pr-4 py-2 rounded-xl bg-blue-700 flex items-center gap-4 text-white"> <img
+                src="magic-wand-svgrepo-com.svg" alt="magic" class="w-5 h-5 text-sky-600" />Generate</button>
+            <div class="flex gap-6">
+              <select class="px-4 py-2 rounded-xl bg-sky-100">
+                <option>Profile Image</option>
+                <option>Header Image</option>
+                <option>Post Image</option>
+              </select>
+              <select class="px-4 py-2 rounded-xl bg-sky-100">
+                <option>4 images</option>
+                <option>3 images</option>
+                <option>2 images</option>
+                <option>1 images</option>
+              </select>
+              <select class="px-4 py-2 rounded-xl bg-sky-100">
+                <option>Dell-E</option>
+                <option>MidJourney</option>
+                <option>Deep Dream</option>
+              </select>
+            </div>
+          </div>
+        </main>
+          <div class="mt-6 h-[300px] bg-gray-100 rounded-lg flex items-center justify-center">
+            <p class="text-gray-500">Your generated image will appear here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
